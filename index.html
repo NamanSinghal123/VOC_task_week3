@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="password-strength.js"></script>
+    <title>User Registration</title>
+</head>
+
+<body>
+    <div class="registration-form">
+        <div class="logo-container">
+            <img src="https://vaultofcodes.com/cdn/shop/files/Untitled_5.png?v=1695629147&width=135" alt="Logo">
+
+            <h2>User Registration</h2>
+            <form action="#" method="post">
+                <div class="input-container">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-container">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="password-strength" class="password-strength">
+                        Password Strength: <span id="strength-label">Weak</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="input-container">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="input-container">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+                </div>
+                <div class="input-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
